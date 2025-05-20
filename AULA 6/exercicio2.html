@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXEMPLO 2</title>
+
+    <style>
+        h1{
+            background-color: aqua;
+            color: black;
+            text-align: center;
+        }
+
+        table, th,td
+        {
+            border: 3px solid rgb(0, 0, 0);
+            border-collapse: collapse;
+            padding: 5px;    
+         }
+         
+         th
+         {
+            color: rgb(0, 0, 0);
+            background-color: aqua;
+         }
+    </style>
+
+</head>
+<body>
+    <H1>AULA 08 - EXERCÍCIO 2</H1>
+
+    <h3>Exercício de Colspan</h3>
+
+    <table>
+      <tr>
+      <th> Dia da Semana</th>
+      <th>Turma </th>
+      <th>Aula 1</th>
+      <th>Aula 2</th>
+      <th>Aula 3</th>
+      <th>Aula 4</th>
+      <th>Aula 5</th>
+      <th>Aula 6</th>
+      </tr>
+
+      <tr>
+        <td>Segunda-feira</td>
+        <td>A/B</td>
+        <td colspan="2">IW</td>
+        <td>EACNT</td>
+        <td>AD/APW</td>
+        <td>Física</td>
+        <td>AD/PA</td>
+        
+      </tr>
+
+      <tr>
+        <td>Terça-feira</td>
+        <td>A/B</td>
+        <td>Português</td>
+        <td colspan="2">PE</td>
+        <td>Física</td>
+        <td colspan="2">Inglês</td>
+      </tr>
+
+      <tr>
+        <td>Quarta-feira</td>
+        <td>A/B</td>
+        <td colspan="2">Português</td>
+        <td colspan="2">FI/PA</td>
+        <td colspan="2">PA/FI</td>
+      </tr>
+    </table>
+
+    <h3>Exercício de rowspan e colspan</h3>
+
+    <table>
+        <tr>
+            <th> Dia da Semana</th>
+            <th>Turma </th>
+            <th>Aula 1</th>
+            <th>Aula 2</th>
+            <th>Aula 3</th>
+            <th>Aula 4</th>
+            <th>Aula 5</th>
+             <th>Aula 6</th>
+        </tr>
+
+        <tr>
+            <td rowspan="2">Domingo</td>
+            <td>A</td>
+            
+        </tr>
+    </table>
+</body>
+</html>

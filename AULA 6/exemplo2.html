@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>EXEMPLO 2</title>
+    <style>
+        h1
+        {
+            color: rgba(0, 0, 0, 0.789);
+            background-color: dimgrey;
+            text-align: center;
+
+        }
+
+        table, th,td
+        {
+            border: 5px solid rgb(0, 0, 0);
+            border-collapse: collapse;
+            padding: 5px;    
+         }
+         
+         th
+         {
+            color: rgb(255, 247, 0);
+            background-color: black;
+         }
+
+    </style>
+</head>
+<body>
+  
+  <h1 style="text-align: center;">EXEMPLO 2</h1>
+  
+  <p><b><u><i>Neste exemplo vamos continuar estudando tabelas, mas vamos mesclar as células</i></u></b></p>
+
+  <table style="font-size:30px;">
+    <tr>
+        <th>Nome do aluno</th>
+        <th>Disciplina</th>
+        <th>Nota</th>
+        <th>Faltas</th>
+    </tr>
+
+    <tr>
+        <td>Guilherme</td>
+        <td>Português</td>
+        <td>MB</td>
+        <td>5</td>
+    </tr>
+
+    <tr>
+        <td>Gustavo</td>
+        <td>Matemática</td>
+        <td>B</td>
+        <td>10</td>
+    </tr>
+    <tr>
+        <td>Felipe</td>
+        <td colspan="3">Aluno não matriculado</td>
+    </tr>
+
+    <tr>
+        <td colspan="2">João da Silva</td>
+        <td colspan="2">Não Avaliado</td>
+
+    </tr>
+
+    <tr>
+        <td colspan="4"; >Aluno não matriculado</td>
+    
+    </tr>
+
+    <tr>
+        <td rowspan="2">Ana Júlia</td>
+        <td>Geografia</td>
+        <td>MB</td>
+        <td>5</td>
+    </tr>
+
+    <tr>
+        <td>História</td>
+        <td>B</td>
+        <td>7</td>
+    </tr>
+
+    <tr>
+        <td style="background-color: cornflowerblue;">Lucas</td>
+        <td>MB</td>
+        <td rowspan="2">Matemática</td>
+        <td rowspan="2">2</td>
+    </tr>
+
+    <tr>
+        <td>Luiz</td>
+        <td>B</td>
+    </tr>
+  </table>
+  
+
+</body>
+</html>
