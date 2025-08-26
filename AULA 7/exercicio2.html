@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 2 - Tabela estilizada com cores e classes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #d9d9d9;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: yellow;
+            color: red;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        section {
+            background-color: white;
+            margin: 20px auto;
+            padding: 20px;
+            width: 80%;
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th {
+            background-color: brown;
+            color: white;
+            padding: 10px;
+            border: 2px solid red;
+        }
+
+        td {
+            padding: 10px;
+            border: 2px solid red;
+            text-align: center;
+        }
+
+        /* Linhas alternadas */
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #ccffcc;
+        }
+
+        /* Classes extras */
+        .negrito {
+            font-weight: bold;
+        }
+
+        .italico {
+            font-style: italic;
+        }
+
+        .sublinhado {
+            text-decoration: underline;
+        }
+
+        .destaque {
+            background-color: yellow;
+            font-weight: bold;
+            border: 5px dashed red;
+        }
+
+        footer {
+            margin-top: 20px;
+        }
+
+        ul {
+            margin-top: 15px;
+        }
+
+        li {
+            color: darkred;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        Exercício 2: Tabela estilizada com cores e classes
+    </header>
+
+    <section>
+        <h2>1) Monte e estilize a tabela</h2>
+        <p>
+            A tabela a seguir utiliza cabeçalho destacado, linhas alternadas e células com classe 
+            <code>.destaque</code>. Observe as bordas vermelhas e o colapso de bordas, como visto no exemplo.
+        </p>
+
+        <table>
+            <tr>
+                <th>Produto</th>
+                <th>Categoria</th>
+                <th>Preço</th>
+                <th>Disponibilidade</th>
+            </tr>
+            <tr>
+                <td class="negrito">Mouse</td>
+                <td>Periféricos</td>
+                <td>R$ 80,00</td>
+                <td>Em estoque</td>
+            </tr>
+            <tr>
+                <td>Teclado</td>
+                <td>Periféricos</td>
+                <td class="destaque">R$ 120,00</td>
+                <td>Fora de estoque</td>
+            </tr>
+            <tr>
+                <td class="italico">Monitor</td>
+                <td>Display</td>
+                <td>R$ 850,00</td>
+                <td class="sublinhado">Em reposição</td>
+            </tr>
+            <tr>
+                <td>Headset</td>
+                <td>Áudio</td>
+                <td>R$ 210,00</td>
+                <td>Em estoque</td>
+            </tr>
+            <!-- Novas linhas conforme solicitado -->
+            <tr>
+                <td class="sublinhado">Cadeira Gamer</td>
+                <td>Móveis</td>
+                <td>R$ 950,00</td>
+                <td>Em estoque</td>
+            </tr>
+            <tr>
+                <td class="negrito italico">Impressora</td>
+                <td>Escritório</td>
+                <td>R$ 600,00</td>
+                <td>Fora de estoque</td>
+            </tr>
+        </table>
+
+        <footer>
+            <p><strong>Tarefas:</strong></p>
+            <ul>
+                <li>Adicione duas novas linhas de produtos e aplique <code>.negrito</code>, <code>.italico</code>, <code>.sublinhado</code> conforme desejar.</li>
+                <li>Aplique a classe <code>.destaque</code> em uma célula diferente e observe o efeito.</li>
+            </ul>
+        </footer>
+    </section>
+
+</body>
+</html>
