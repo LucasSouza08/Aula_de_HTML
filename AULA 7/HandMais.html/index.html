@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hand GXP Store - Loja de Handebol</title>
+  <link rel="icon" type="image/png" href=".img/handebol_guaxupe.jpg">
+
+  <!-- Google Fonts + Ícones -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #fff;
+      color: #000;
+      scroll-behavior: smooth; /* Rolagem suave */
+    }
+
+    /* Cabeçalho */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background-color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: 700;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: black;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .icons i {
+      margin-left: 20px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    /* Banner */
+    .banner {
+      background: url(".img/banner.jpg") center/cover no-repeat;
+      height: 600px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 1px 1px 6px rgba(0,0,0,0.7);
+      font-size: 36px;
+      font-weight: bold;
+    }
+
+    /* Produtos */
+    .produtos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+      padding: 40px;
+    }
+
+    .card {
+      text-align: center;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 15px;
+      transition: 0.3s;
+      background: #fff;
+    }
+
+    .card:hover {
+      box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 160px;
+      height: auto;
+      margin-bottom: 15px;
+    }
+
+    .titulo {
+      font-size: 16px;
+      font-weight: 500;
+      min-height: 50px;
+    }
+
+    .preco {
+      font-weight: bold;
+      margin: 10px 0;
+      font-size: 18px;
+    }
+
+    .parcela {
+      font-size: 14px;
+      color: #444;
+      margin-bottom: 10px;
+    }
+
+    .comprar {
+      display: inline-block;
+      padding: 10px 15px;
+      background-color: black;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    .comprar:hover {
+      background-color: #444;
+    }
+
+    /* Contato */
+    .contato {
+      padding: 40px;
+      background-color: #f9f9f9;
+      text-align: center;
+    }
+
+    .contato h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .contato p {
+      font-size: 18px;
+      margin: 10px 0;
+    }
+
+    /* Rodapé */
+    footer {
+      background-color: #f5f5f5;
+      padding: 40px;
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+      margin-top: 40px;
+    }
+
+    footer p {
+      max-width: 800px;
+      margin: auto;
+      font-size: 16px;
+      line-height: 1.5;
+      font-weight: 400;
+    }
+
+    /* Responsivo */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .icons {
+        margin-top: 10px;
+      }
+    }
+
+    .titulo {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* espaço entre logo e texto */
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 15px;
+}
+.titulo img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%; /* deixa a logo redonda */}
+
+    .titulobanner {
+        background-color: #007bff; /* fundo azul */
+  color: #fff;              /* texto branco */
+  padding: 10px 20px;       /* espaço interno */
+  border-radius: 15px;      /* bordas arredondadas */
+  display: inline-block;    /* borda se ajusta ao texto */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header>
+    <h1 class="titulo">
+  <img src=".img/handebol_guaxupe.jpg" alt="Logo" class="logo">
+  Hand GXP Store 
+</h1>
+
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#produtos">Produtos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <div class="icons">
+      <i class="fas fa-search"></i>
+      <i class="fas fa-user"></i>
+      <i class="fas fa-shopping-cart"></i>
+    </div>
+  </header>
+
+  <!-- Banner (Início) -->
+  <div class="banner" id="inicio">
+    <h1 class="titulobanner">Bem-vindo á Hand GXP Store</h1>
+  </div>
+
+  <!-- Produtos -->
+  <section class="produtos" id="produtos">
+    <div class="card">
+      <img src=".img/bola.jpg" alt="Bola">
+      <p class="titulo">Bola de Handebol Kempa - Amarelo e Azul</p>
+      <p class="preco">R$289,99</p>
+      <p class="parcela">3x de R$97,33 sem juros</p>
+      <a href="#" class="comprar"><i class="fas fa-cart-plus"></i> Comprar</a>
+    </div>
+
+    <div class="card">
+      <img src=".img/tenis.jpg" alt="Tênis">
+      <p class="titulo">Adidas Stabil 16 Indoor Wing Lite - Branco e Vermelho</p>
+      <p class="preco">R$1849,99</p>
+      <p class="parcela">6x de R$ 314,99 sem juros</p>
+      <a href="#" class="comprar"><i class="fas fa-cart-plus"></i> Comprar</a>
+    </div>
+
+    <div class="card">
+      <img src=".img/camiseta.jpg" alt="Camiseta">
+      <p class="titulo">Camiseta Kempa Feminina Emotion - Azul Marinho e Amarelo</p>
+      <p class="preco">R$119,99</p>
+      <p class="parcela">2x de R$60,00 sem juros</p>
+      <a href="#" class="comprar"><i class="fas fa-cart-plus"></i> Comprar</a>
+    </div>
+
+    <div class="card">
+      <img src=".img/shorts.jpg" alt="Shorts">
+      <p class="titulo">Shorts Kempa Feminino Team Feminino - Branco</p>
+      <p class="preco">R$89,99</p>
+      <p class="parcela">À vista</p>
+      <a href="#" class="comprar"><i class="fas fa-cart-plus"></i> Comprar</a>
+    </div>
+
+    <div class="card">
+      <img src=".img/munhequeira.jpg" alt="Munhequeiras">
+      <p class="titulo">Munhequeiras Handcola - Par</p>
+      <p class="preco">R$39,99</p>
+      <p class="parcela">À vista</p>
+      <a href="#" class="comprar"><i class="fas fa-cart-plus"></i> Comprar</a>
+    </div>
+
+    <div class="card">
+      <img src=".img/meias.jpg" alt="Meia">
+      <p class="titulo">Meia Handcola - Par</p>
+      <p class="preco">R$39,99</p>
+      <p class="parcela">À vista</p>
+      <a href="#" class="comprar"><i class="fas fa-cart-plus"></i> Comprar</a>
+    </div>
+
+    <div class="card">
+      <img src=".img/resina.jpg" alt="Resina">
+      <p class="titulo">Resina para Handebol Handcola - 500g</p>
+      <p class="preco">R$89,99</p>
+      <p class="parcela">À vista</p>
+      <a href="#" class="comprar"><i class="fas fa-cart-plus"></i> Comprar</a>
+    </div>
+
+    <div class="card">
+      <img src=".img/camiseta1.jpg" alt="Camiseta">
+      <p class="titulo">Camiseta Kempa Masculino Emotion - Azul Marinho e Amarelo</p>
+      <p class="preco">R$119,99</p>
+      <p class="parcela">2x de R$60,00 sem juros</p>
+      <a href="#" class="comprar"><i class="fas fa-cart-plus"></i> Comprar</a>
+    </div>
+
+    <div class="card">
+      <img src=".img/shorts1.jpg" alt="Shorts">
+      <p class="titulo">Shorts Kempa Masculino Team  - Branco</p>
+      <p class="preco">R$89,99</p>
+      <p class="parcela">À vista</p>
+      <a href="#" class="comprar"><i class="fas fa-cart-plus"></i> Comprar</a>
+    </div>
+
+    <div class="card">
+      <img src=".img/jaqueta.jpg" alt="Jaqueta">
+      <p class="titulo">Jaqueta Kempa Pinheiros CT Torcedor Handebol - Preto</p>
+      <p class="preco">R$289,99</p>
+      <p class="parcela">3x de R$ 102,99</p>
+      <a href="#" class="comprar"><i class="fas fa-cart-plus"></i> Comprar</a>
+    </div>
+
+    <div class="card">
+      <img src=".img/bolsa.jpg" alt="Bolsa">
+      <p class="titulo">Bolsa Kempa Unissex - Preto</p>
+      <p class="preco">R$159,99</p>
+      <p class="parcela">3x de R$ 59,99</p>
+      <a href="#" class="comprar"><i class="fas fa-cart-plus"></i> Comprar</a>
+    </div>
+</section>
+
+  <!-- Contato -->
+  <section class="contato" id="contato">
+    <h2>Entre em Contato</h2>
+    <p><i class="fas fa-envelope"></i> contato@handmais.com.br</p>
+    <p><i class="fas fa-phone"></i> (35) 91017-2003</p>
+    <p><i class="fas fa-map-marker-alt"></i> Guaxupé - MG</p>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>
+      Nós, da <b><u><i>Hand GXP Store</i></u></b>, respiramos handebol todos os dias.
+Nosso compromisso é oferecer os melhores equipamentos esportivos para atletas de todos os níveis — do iniciante ao profissional.
+Aqui você encontra bolas, calçados e acessórios desenvolvidos com qualidade, conforto e desempenho, para que cada jogada seja inesquecível.
+    </p>
+  </footer>
+
+</body>
+</html>
