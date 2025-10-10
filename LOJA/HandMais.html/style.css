@@ -1,0 +1,77 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #007bff, #00bfff);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  padding: 40px;
+  border-radius: 20px;
+  width: 320px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+}
+
+button {
+  background: #fff;
+  color: #007bff;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #007bff;
+  color: #fff;
+}
+
+.voltar {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.voltar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.mensagem-sucesso {
+  background: #fff;
+  color: #007bff;
+  padding: 20px;
+  border-radius: 15px;
+  margin-top: 20px;
+  text-align: center;
+}
